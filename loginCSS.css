@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg,#2980b9,#8e44ad);
+    height: 110vh;
+    overflow: hidden;
+}
+.main h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    background-color: white;
+}
+.main form{
+    padding: 0px 40px 0px 40px;
+    box-sizing: border-box;
+}
+
+form .child{
+    position: relative;
+    border-bottom: 1px solid rgb(103, 31, 161);
+    margin: 30px 0px;
+}
+
+.child input{
+    width: 100%;
+    padding: 0 5px;
+    height: 35px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.child label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: gray;
+    transform: translateY(-55%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.4s;
+}
+.child span::before{
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: teal;
+    transition: 0.4s;
+}
+
+.child input:focus ~ label,
+.child input:valid ~ label{
+    top: -5px;
+    color: teal;
+}
+.child input:focus ~ span::before,
+.child input:valid ~ span::before{
+    /* top: -5px; */
+    color: teal;
+}
+.Forgot_link{
+    margin: 80px 0px 10px 0px;
+    text-align: center;
+    color: gray;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: linear-gradient(120deg,#2980b9,#8e44ad);
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    border-color: teal;
+    transition: 00.4s;
+}
+.signup_link{
+    text-align: center;
+    color: gray;
+    margin: 0px 0px 20px 0px;
+}
