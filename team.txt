@@ -2,6 +2,6 @@ Team Name = Titans
 Team Members
      1. Pranesh Nath
      2. Dheeraj Joshi
-     3. Mayukh
+     3. Mayukh Sen
      4. Manish
      5. Saif Ali
